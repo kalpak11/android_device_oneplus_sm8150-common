@@ -18,7 +18,7 @@ $(call inherit-product-if-exists, vendor/oneplus/sm8150-common/sm8150-common-ven
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
 	$(LOCAL_PATH)/overlay \
-	$(LOCAL_PATH)/overlay-lineage \
+	$(LOCAL_PATH)/overlay-carbon
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
@@ -118,7 +118,7 @@ PRODUCT_PACKAGES += \
 	android.hardware.camera.provider@2.4-impl \
 	android.hardware.camera.provider@2.4-service_64 \
 	libxml2 \
-	Snap \
+	Snap
 
 # CNE
 PRODUCT_PACKAGES += \
@@ -246,11 +246,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	android.hardware.light@2.0-service.oneplus_msmnile
 
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-	vendor.lineage.livedisplay@2.0-service-sdm
-
 # Media
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -319,10 +314,6 @@ PRODUCT_PACKAGES += \
 # TextClassifier
 PRODUCT_PACKAGES += \
 	textclassifier.bundle1
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-	vendor.lineage.trust@1.0-service
 
 # VNDK-SP
 PRODUCT_PACKAGES += \
